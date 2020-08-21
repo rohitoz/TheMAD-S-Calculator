@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4883B8B7E15E9AD4CCAFE056 /* Pods_The_MAD_S__Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0819BF8F73087985F935048 /* Pods_The_MAD_S__Calculator.framework */; };
 		7D68831824EE9F25004FCE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68831724EE9F25004FCE58 /* AppDelegate.swift */; };
 		7D68831A24EE9F25004FCE58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68831924EE9F25004FCE58 /* ViewController.swift */; };
 		7D68831D24EE9F25004FCE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D68831B24EE9F25004FCE58 /* Main.storyboard */; };
 		7D68832024EE9F25004FCE58 /* The_MAD_S__Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D68831E24EE9F25004FCE58 /* The_MAD_S__Calculator.xcdatamodeld */; };
 		7D68832224EE9F26004FCE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D68832124EE9F26004FCE58 /* Assets.xcassets */; };
 		7D68832524EE9F26004FCE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D68832324EE9F26004FCE58 /* LaunchScreen.storyboard */; };
+		7D68832D24EEAEEF004FCE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D68832C24EEAEEF004FCE58 /* GoogleService-Info.plist */; };
+		7D68832F24EEBDB6004FCE58 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68832E24EEBDB6004FCE58 /* LogInViewController.swift */; };
+		7D68833124EECD55004FCE58 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68833024EECD55004FCE58 /* RegisterViewController.swift */; };
+		7D68833324EECF74004FCE58 /* Numbers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D68833224EECF74004FCE58 /* Numbers.jpg */; };
+		7D68833524EED000004FCE58 /* Numbers2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D68833424EED000004FCE58 /* Numbers2.jpg */; };
+		7D68833724EED2F1004FCE58 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D68833624EED2F1004FCE58 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E56CF4FF8CFE17498C51C40 /* Pods-The MAD(S) Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The MAD(S) Calculator.release.xcconfig"; path = "Target Support Files/Pods-The MAD(S) Calculator/Pods-The MAD(S) Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		7D68831424EE9F25004FCE58 /* The MAD(S) Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The MAD(S) Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D68831724EE9F25004FCE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D68831924EE9F25004FCE58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,14 @@
 		7D68832124EE9F26004FCE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D68832424EE9F26004FCE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D68832624EE9F27004FCE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D68832C24EEAEEF004FCE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D68832E24EEBDB6004FCE58 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		7D68833024EECD55004FCE58 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7D68833224EECF74004FCE58 /* Numbers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Numbers.jpg; sourceTree = "<group>"; };
+		7D68833424EED000004FCE58 /* Numbers2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Numbers2.jpg; sourceTree = "<group>"; };
+		7D68833624EED2F1004FCE58 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		BD3798C9F661A6162C455E0D /* Pods-The MAD(S) Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The MAD(S) Calculator.debug.xcconfig"; path = "Target Support Files/Pods-The MAD(S) Calculator/Pods-The MAD(S) Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		E0819BF8F73087985F935048 /* Pods_The_MAD_S__Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_MAD_S__Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4883B8B7E15E9AD4CCAFE056 /* Pods_The_MAD_S__Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BA05DA4057BFD846E4306F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD3798C9F661A6162C455E0D /* Pods-The MAD(S) Calculator.debug.xcconfig */,
+				6E56CF4FF8CFE17498C51C40 /* Pods-The MAD(S) Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D68830B24EE9F25004FCE58 = {
 			isa = PBXGroup;
 			children = (
 				7D68831624EE9F25004FCE58 /* The MAD(S) Calculator */,
 				7D68831524EE9F25004FCE58 /* Products */,
+				4BA05DA4057BFD846E4306F7 /* Pods */,
+				C2D5278CF148016E107D3F45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +87,26 @@
 				7D68831724EE9F25004FCE58 /* AppDelegate.swift */,
 				7D68831924EE9F25004FCE58 /* ViewController.swift */,
 				7D68831B24EE9F25004FCE58 /* Main.storyboard */,
+				7D68833624EED2F1004FCE58 /* CalculatorViewController.swift */,
+				7D68833024EECD55004FCE58 /* RegisterViewController.swift */,
+				7D68832E24EEBDB6004FCE58 /* LogInViewController.swift */,
 				7D68832124EE9F26004FCE58 /* Assets.xcassets */,
+				7D68833424EED000004FCE58 /* Numbers2.jpg */,
+				7D68833224EECF74004FCE58 /* Numbers.jpg */,
 				7D68832324EE9F26004FCE58 /* LaunchScreen.storyboard */,
 				7D68832624EE9F27004FCE58 /* Info.plist */,
+				7D68832C24EEAEEF004FCE58 /* GoogleService-Info.plist */,
 				7D68831E24EE9F25004FCE58 /* The_MAD_S__Calculator.xcdatamodeld */,
 			);
 			path = "The MAD(S) Calculator";
+			sourceTree = "<group>";
+		};
+		C2D5278CF148016E107D3F45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0819BF8F73087985F935048 /* Pods_The_MAD_S__Calculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D68832924EE9F27004FCE58 /* Build configuration list for PBXNativeTarget "The MAD(S) Calculator" */;
 			buildPhases = (
+				3E111664D8BE2D9CBE2A2D23 /* [CP] Check Pods Manifest.lock */,
 				7D68831024EE9F25004FCE58 /* Sources */,
 				7D68831124EE9F25004FCE58 /* Frameworks */,
 				7D68831224EE9F25004FCE58 /* Resources */,
+				0ABE76969D70F526DD4C701B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +170,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D68832524EE9F26004FCE58 /* LaunchScreen.storyboard in Resources */,
+				7D68833324EECF74004FCE58 /* Numbers.jpg in Resources */,
+				7D68832D24EEAEEF004FCE58 /* GoogleService-Info.plist in Resources */,
 				7D68832224EE9F26004FCE58 /* Assets.xcassets in Resources */,
 				7D68831D24EE9F25004FCE58 /* Main.storyboard in Resources */,
+				7D68833524EED000004FCE58 /* Numbers2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ABE76969D70F526DD4C701B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The MAD(S) Calculator/Pods-The MAD(S) Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E111664D8BE2D9CBE2A2D23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The MAD(S) Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D68831024EE9F25004FCE58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D68832F24EEBDB6004FCE58 /* LogInViewController.swift in Sources */,
+				7D68833124EECD55004FCE58 /* RegisterViewController.swift in Sources */,
 				7D68832024EE9F25004FCE58 /* The_MAD_S__Calculator.xcdatamodeld in Sources */,
 				7D68831A24EE9F25004FCE58 /* ViewController.swift in Sources */,
+				7D68833724EED2F1004FCE58 /* CalculatorViewController.swift in Sources */,
 				7D68831824EE9F25004FCE58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +364,7 @@
 		};
 		7D68832A24EE9F27004FCE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3798C9F661A6162C455E0D /* Pods-The MAD(S) Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geekyworks.Demo.The-MAD-S--Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitoz.Demo.The-MAD-S--Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,6 +382,7 @@
 		};
 		7D68832B24EE9F27004FCE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E56CF4FF8CFE17498C51C40 /* Pods-The MAD(S) Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +391,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geekyworks.Demo.The-MAD-S--Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitoz.Demo.The-MAD-S--Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

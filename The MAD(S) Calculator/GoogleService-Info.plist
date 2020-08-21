@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>383044487405-f5lfg0kbcban4adu42gdsvf0bncsm8ak.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.383044487405-f5lfg0kbcban4adu42gdsvf0bncsm8ak</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbIiQipTwdZ4LCQWlbGavLl6sN5pItxIA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>383044487405</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rohitoz.Demo.The-MAD-S--Calculator</string>
+	<key>PROJECT_ID</key>
+	<string>the-mads-calculator</string>
+	<key>STORAGE_BUCKET</key>
+	<string>the-mads-calculator.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:383044487405:ios:68134edf215fa4fedbe4e4</string>
+	<key>DATABASE_URL</key>
+	<string>https://the-mads-calculator.firebaseio.com</string>
+</dict>
+</plist>
