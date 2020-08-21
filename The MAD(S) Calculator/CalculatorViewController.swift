@@ -10,26 +10,68 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
+struct EquationHistory {
+    var equation:String
+    var ans:String
+}
+
 class CalculatorViewController: UIViewController {
 
     @IBOutlet weak var equationLabel: UILabel!
     @IBOutlet weak var ansLabel: UILabel!
     @IBOutlet weak var equationText: UITextField!
-    var equationArray = [Character]()
-    
-    var result: Int?
-    
     @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var historyView: UIView!
+
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    @IBOutlet weak var label5: UILabel!
+    @IBOutlet weak var label6: UILabel!
+    @IBOutlet weak var label7: UILabel!
+    @IBOutlet weak var label8: UILabel!
+    @IBOutlet weak var label9: UILabel!
+    @IBOutlet weak var label10: UILabel!
+    
+    var result: Int = 0
+    var equationArray = [String]()
+    var equationHistoryArray = [EquationHistory](repeating: EquationHistory(equation: "", ans: ""), count: 10)
+    var labelArray = [UILabel]()
+    static var historyCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
         equationLabel.isHidden = true
         ansLabel.isHidden = true
+        historyView.isHidden = true
         
         equationText.delegate = self
         equationText.keyboardType = .default
+        
+        labelArray = [label1,label2,label3,label4,label5,label6,label7,label8,label9,label10]
         // Do any additional setup after loading the view.
+    }
+    
+    func parseEquation(){
+        equationArray.removeAll()
+        let stringequation = Array(equationText.text!)
+        var digits:String = ""
+        for eqn in stringequation{
+            if (eqn != "*" && eqn != "+" && eqn != "/" && eqn != "-"){
+                digits = digits + String(eqn)
+            }else {
+                equationArray.append(digits)
+                equationArray.append(String(eqn))
+                digits = ""
+            }
+        }
+        
+        if digits != ""{
+            equationArray.append(digits)
+        }
     }
     
     func multiplication(){
@@ -39,10 +81,10 @@ class CalculatorViewController: UIViewController {
                 equationArray[index] = "x"
                 if index < 3{
                     equationArray[index - 1] = "x"
-                    equationArray[index + 1] = Character(String(result!))
+                    equationArray[index + 1] = (String(result))
                 } else {
                     equationArray[index + 1] = "x"
-                    equationArray[index - 1] = Character(String(result!))
+                    equationArray[index - 1] = (String(result))
                 }
                 equationArray = equationArray.filter{$0 != "x"}
                 print("In Multiplication")
@@ -64,10 +106,10 @@ class CalculatorViewController: UIViewController {
                 equationArray[index] = "x"
                 if index < 3{
                     equationArray[index - 1] = "x"
-                    equationArray[index + 1] = Character(String(result!))
+                    equationArray[index + 1] = (String(result))
                 } else {
                     equationArray[index + 1] = "x"
-                    equationArray[index - 1] = Character(String(result!))
+                    equationArray[index - 1] = (String(result))
                 }
                 equationArray = equationArray.filter{$0 != "x"}
                 print("In +")
@@ -88,10 +130,10 @@ class CalculatorViewController: UIViewController {
                 equationArray[index] = "x"
                 if index < 3{
                     equationArray[index - 1] = "x"
-                    equationArray[index + 1] = Character(String(result!))
+                    equationArray[index + 1] = (String(result))
                 } else {
                     equationArray[index + 1] = "x"
-                    equationArray[index - 1] = Character(String(result!))
+                    equationArray[index - 1] = (String(result))
                 }
                 equationArray = equationArray.filter{$0 != "x"}
                 print("In /")
@@ -114,10 +156,10 @@ class CalculatorViewController: UIViewController {
                 equationArray[index] = "x"
                 if index < 3{
                     equationArray[index - 1] = "x"
-                    equationArray[index + 1] = Character(String(result!))
+                    equationArray[index + 1] = (String(result))
                 } else {
                     equationArray[index + 1] = "x"
-                    equationArray[index - 1] = Character(String(result!))
+                    equationArray[index - 1] = (String(result))
                 }
                 equationArray = equationArray.filter{$0 != "x"}
                 print("In -")
@@ -127,12 +169,35 @@ class CalculatorViewController: UIViewController {
         }
     }
     
+    func storeHistory(){
+        if CalculatorViewController.historyCount == 10{
+            CalculatorViewController.historyCount = 0
+        }
+        
+        let obj = EquationHistory(equation: equationText.text!, ans: String(result))
+        equationHistoryArray[CalculatorViewController.historyCount] = obj
+        CalculatorViewController.historyCount += 1
+    }
+    
+    func displayHistory(){
+    
+        for (index,obj) in equationHistoryArray.enumerated() {
+            if obj.equation != "" {
+                labelArray[index].text = obj.equation + "=" + obj.ans
+            }
+        }
+        
+    }
+    
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
+        
+        historyView.isHidden = true
+        
         if !(equationText.text?.isEmpty)! {
             equationLabel.isHidden = false
             equationLabel.text = "Equation is: " + equationText.text!
             
-            equationArray = Array(equationText.text!)
+            parseEquation()
             print(equationArray)
             
             while equationArray.count > 1 {
@@ -155,10 +220,23 @@ class CalculatorViewController: UIViewController {
                 }
             }
             
+            
+            storeHistory()
+            equationText.text = ""
             ansLabel.isHidden = false
-            ansLabel.text = "Ans: " + String(result!)
+            ansLabel.text = "Ans: " + String(result)
         }
     }
+    
+    @IBAction func useAnsButtonTapped(_ sender: UIButton) {
+        equationText.text = String(result)
+    }
+    
+    @IBAction func historyButtonTapped(_ sender: UIButton) {
+        displayHistory()
+        historyView.isHidden = false
+    }
+    
     
 
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
